@@ -22,7 +22,7 @@ export const aggregatePoints = (transactions) => {
     const monthlyPoints = {};
     let totalPoints = 0;
 
-    transactions.map(transaction => {
+    transactions.forEach(transaction => {
         const transactionDate = new Date(transaction.date);
         const transactionYear = transactionDate.getFullYear();
         const transactionMonth = transactionDate.getMonth();
